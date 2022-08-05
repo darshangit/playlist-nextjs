@@ -1,3 +1,5 @@
+import NextImage from "next/image";
+
 import {
   Box,
   List,
@@ -25,7 +27,11 @@ const Sidebar = () => {
       paddingX="5px"
       color="gray"
     >
-      Side bar
+      <Box paddingY="20px">
+        <Box width="120px" marginBottom="20px" paddingX="20px">
+          <NextImage src="/logo.svg" width={60} height={120} />
+        </Box>
+      </Box>
     </Box>
   );
 };
